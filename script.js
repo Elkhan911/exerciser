@@ -1,10 +1,7 @@
-function searchForTheMeaningOfLife() {
-  const meaningOfLifeFound = true;
+const password = prompt("Введите пароль:", "");
+
+for (let i = 0; i <= password.length; i = i + 1) {
+  if (password[i] === "?") {
+    console.log('"?" есть в пароле на позиции ' + (i + 1));
+  }
 }
-
-const meaningOfLife = searchForTheMeaningOfLife();
-
-/* Поскольку функция ничего не возвращает,
-в переменную meaningOfLife попадёт undefined. */
-
-console.log(meaningOfLife); // undefined
