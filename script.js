@@ -1,7 +1,13 @@
-let year = 2009;
+let morningList = [
+  "Встать с кровати",
+  "Почистить зубы",
+  "Сделать зарядку",
+  "Позавтракать",
+  "Помыть посуду",
+];
 
-if (year % 4 === 0) {
-  console.log(year + " год - високосный");
-} else {
-  console.log(year + " год - невисокосный");
+let i = 0;
+while (i < morningList.length) {
+  console.log([morningList[i]]);
+  i = i + 1;
 }
