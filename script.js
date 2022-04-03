@@ -1,7 +1,7 @@
-const password = prompt("Введите пароль:", "");
+let year = 2009;
 
-for (let i = 0; i <= password.length; i = i + 1) {
-  if (password[i] === "?") {
-    console.log('"?" есть в пароле на позиции ' + (i + 1));
-  }
+if (year % 4 === 0) {
+  console.log(year + " год - високосный");
+} else {
+  console.log(year + " год - невисокосный");
 }
