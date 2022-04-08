@@ -1,9 +1,13 @@
-let employee = {
-  firstName: "Василий",
-  lastName: "Тёркин",
-  age: 28,
-};
+let morningList = [
+  "Встать с кровати",
+  "Почистить зубы",
+  "Сделать зарядку",
+  "Позавтракать",
+  "Помыть посуду",
+];
 
-console.log(employee);
-
-
+let i = 0;
+while (i < morningList.length) {
+  console.log([morningList[i]]);
+  i = i + 1;
+}
