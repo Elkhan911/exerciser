@@ -21,6 +21,4 @@ function addSong() {
 </div>`;
 }
 
-addSong();
-addSong();
-addSong();
+addButton.addEventListener("click", addSong);
