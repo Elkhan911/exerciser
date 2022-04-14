@@ -1,13 +1,15 @@
-let employee = {
-  firstName: "Василий",
-  lastName: "Тёркин",
-  age: 28,
-};
+console.log(document.body);
+console.log(document.head);
+console.log(document.title);
 
-console.log(employee);
+console.log(document.abzac);
 
-function getFullName() {
-  console.log(employee.firstName + " " + employee.lastName);
+
+
+
+let password = null;
+
+while (password === "null") {
+  password = prompt("Введите пароль:");
 }
 
-getFullName(employee);
