@@ -1,24 +1,5 @@
-let container = document.querySelector(".container");
-let songsContainer = document.querySelector(".songs-container");
-let songs = songsContainer.querySelectorAll(".song");
+let password = prompt("Введите пароль:");
 
-let addButton = document.querySelector(".form__submit-btn_action_add");
-let resetButton = document.querySelector(".form__submit-btn_action_reset");
-
-if (songs.length === 0) {
-  resetButton.setAttribute("disabled", true);
-  resetButton.classList.add("form__submit-btn_disabled");
-} else {
-  resetButton.removeAttribute("disabled", true);
-  resetButton.classList.remove("form__submit-btn_disabled");
+if (password === 0) {
+  password = prompt("Пароль обязателен и не может быть пустым.");
 }
-
-function addSong() {
-  songsContainer.innerHTML += `<div class="song">
-    <h4 class="song__artist">Кино</h4>
-    <p class="song__title">Дерево</p>
-    <button class="song__like"></button>
-</div>`;
-}
-
-addButton.addEventListener("click", addSong);
