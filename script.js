@@ -5,3 +5,4 @@
 const myName = prompt("Как Вас зовут?", "");
 
 console.log("Здравствуйте, " /* допишите код здесь */);
+asdasd
