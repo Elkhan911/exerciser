@@ -1,8 +1,30 @@
-/* Функция prompt показывает диалоговое
-окно с возможностью ввести текст. Введённая строка
-попадёт в переменную myName */
+function copy(obj) {
+  const res = {};
 
-const myName = prompt("Как Вас зовут?", "");
+  Object.keys(obj).forEach(function (key) {
+    res[key] = obj[key];
+  });
 
-console.log("Здравствуйте, " /* допишите код здесь */);
-asdasd
+  return res;
+}
+
+const firstObj = {
+  one: 1,
+  two: 2,
+  three: 3,
+};
+
+const secondObj = firstObj;
+const thirdObj = copy(firstObj);
+
+console.log(firstObj); // { one: 1, three: 3, two: 2 }
+console.log(secondObj); // { one: 1, three: 3, two: 2 }
+console.log(thirdObj); // { one: 1, three: 3, two: 2 }
+
+firstObj.four = 4;
+
+console.log(firstObj); // { four: 4, one: 1, three: 3, two: 2 }
+console.log(secondObj); // { four: 4, one: 1, three: 3, two: 2 }
+
+// thirdObj не изменился
+console.log(thirdObj); // { one: 1, three: 3, two: 2 }
