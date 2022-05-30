@@ -1,30 +1,17 @@
-function copy(obj) {
-  const res = {};
+const formElement = document.querySelector(".form");
+const formInput = formElement.querySelector(".form__input");
 
-  Object.keys(obj).forEach(function (key) {
-    res[key] = obj[key];
-  });
+const showError = (input) => {
 
-  return res;
-}
-
-const firstObj = {
-  one: 1,
-  two: 2,
-  three: 3,
 };
 
-const secondObj = firstObj;
-const thirdObj = copy(firstObj);
+const hideError = (input) => {
+  // удалите класс ошибки с элемента input
+};
 
-console.log(firstObj); // { one: 1, three: 3, two: 2 }
-console.log(secondObj); // { one: 1, three: 3, two: 2 }
-console.log(thirdObj); // { one: 1, three: 3, two: 2 }
+formElement.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+});
 
-firstObj.four = 4;
 
-console.log(firstObj); // { four: 4, one: 1, three: 3, two: 2 }
-console.log(secondObj); // { four: 4, one: 1, three: 3, two: 2 }
 
-// thirdObj не изменился
-console.log(thirdObj); // { one: 1, three: 3, two: 2 }
