@@ -1,13 +1,5 @@
-const tweets = [
-  "Какой-то странный тред",
-  "Твит, адресованный Илону Маску",
-  "Ответ на инфоповод",
-];
+let test = true;
 
-function forEach(arr, callback) {
-  // напишите код здесь
-}
-
-forEach(tweets, function (tweet) {
-  console.log(tweet);
-});
+if (test !== true) {
+  console.log(true);
+} else console.log(false);
