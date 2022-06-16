@@ -1,16 +1,6 @@
-let num = prompt();
+let i = 1;
 
-switch (num) {
-  case "1":
-    console.log("Zdarova");
-    break;
-  case "2":
-    console.log("Brat");
-    break;
-  case "3":
-    console.log("Sestra");
-    break;
-  default:
-    console.log("Мы рады всем одинаково");
-    break;
+while (i <= 10) {
+  console.log(i);
+  i = i + 2;
 }
