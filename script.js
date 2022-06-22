@@ -1,7 +1,7 @@
-let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
 
-for (let key in obj) {
-}
+let obj = {};
 
-console.log(obj);
-console.log(Second);
+
+for (let i = 0; i >= arr1.length - 1;i++)
