@@ -1,12 +1,7 @@
-let arr = [4, 2, 5, 19, 13, 0, 10];
-
-let sum = 0;
-let result = 0;
-
-for (let i = 0; i <= arr.length - 1; i++) {
-  sum += arr[i];
-  result = Math.sqrt(sum);
+function Numbers() {
+  for (let i = 1; i <= 100; i++) {
+    console.log(i);
+  }
 }
 
-console.log(sum);
-console.log(result);
+Numbers();
