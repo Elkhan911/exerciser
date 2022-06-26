@@ -1,9 +1,12 @@
-let arr = ["a", "b", "c", "d", "e"];
+let arr = [4, 2, 5, 19, 13, 0, 10];
 
-let obj = {};
+let sum = 0;
+let result = 0;
 
-for (let i = 1; i <= arr.length - 1; i++) {
-  obj[arr[i - 1]] = i;
+for (let i = 0; i <= arr.length - 1; i++) {
+  sum += arr[i];
+  result = Math.sqrt(sum);
 }
 
-console.log(obj);
+console.log(sum);
+console.log(result);
