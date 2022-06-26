@@ -5,3 +5,4 @@ function Numbers() {
 }
 
 Numbers();
+Numbers();
