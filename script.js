@@ -1,8 +1,7 @@
-function Numbers() {
-  for (let i = 1; i <= 100; i++) {
-    console.log(i);
-  }
+function func(num1 = 0, num2 = 0) {
+  console.log(num1 + num2);
 }
 
-Numbers();
-Numbers();
+func(2, 3);
+func(3);
+func(yeah);
