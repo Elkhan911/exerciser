@@ -1,7 +1,9 @@
-function func(num1 = 0, num2 = 0) {
-  console.log(num1 + num2);
+let num = 12345;
+let arr = String(num).split("");
+
+let prod = 1;
+for (let digit of arr) {
+  prod *= digit;
 }
 
-func(2, 3);
-func(3);
-func(yeah);
+console.log(prod);
